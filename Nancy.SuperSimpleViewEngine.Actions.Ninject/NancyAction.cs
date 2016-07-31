@@ -7,7 +7,7 @@ namespace Nancy.SuperSimpleViewEngine.Actions.Ninject
         protected NancyContext Context;
         protected IViewEngineHost Host;
 
-        public void Configure(IViewEngineHost host)
+        internal void Configure(IViewEngineHost host)
         {
             Context = (NancyContext)host.Context;
             Host = host;

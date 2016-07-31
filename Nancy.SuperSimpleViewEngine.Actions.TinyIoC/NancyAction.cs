@@ -1,13 +1,13 @@
 ﻿using Nancy.ViewEngines.SuperSimpleViewEngine;
 
-namespace Nancy.SuperSimpleViewEngine.Actions.Ninject
+namespace Nancy.SuperSimpleViewEngine.Actions.TinyIoC
 {
     public abstract class NancyAction : INancyAction
     {
         protected NancyContext Context;
         protected IViewEngineHost Host;
 
-        public void Configure(IViewEngineHost host)
+        internal void Configure(IViewEngineHost host)
         {
             Context = (NancyContext)host.Context;
             Host = host;

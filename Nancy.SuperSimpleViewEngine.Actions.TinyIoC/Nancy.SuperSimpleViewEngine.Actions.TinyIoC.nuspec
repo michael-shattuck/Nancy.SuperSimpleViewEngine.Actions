@@ -10,5 +10,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Support for injectable actions in views for SuperSimpleViewEngine using TinyIoC</description>
     <tags>nancy,ssve,actions,supersimpleviewengine,tinyioc</tags>
+    <dependencies>
+      <dependency id="Nancy" version="1.4.3" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\Nancy.SuperSimpleViewEngine.Actions.TinyIoC.dll" />
+  </files>
 </package>

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Nancy.SuperSimpleViewEngine.Actions.Ninject;
 using Nancy.TinyIoc;
 using Nancy.ViewEngines.SuperSimpleViewEngine;
 

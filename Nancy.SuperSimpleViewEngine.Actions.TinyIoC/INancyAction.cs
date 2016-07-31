@@ -1,4 +1,4 @@
-﻿namespace Nancy.SuperSimpleViewEngine.Actions.Ninject
+﻿namespace Nancy.SuperSimpleViewEngine.Actions.TinyIoC
 {
     public interface INancyAction
     {
