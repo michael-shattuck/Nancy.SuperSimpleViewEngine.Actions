@@ -20,10 +20,9 @@ namespace Nancy.SuperSimpleViewEngine.Actions.TinyIoC
             return TokenPattern.Replace(content, match =>
             {
                 var actionName = match.Groups["ActionName"].Value;
-                var matchingActions = GetType().Assembly.GetTypes().Where(x =>
-                    (x.Name == actionName || x.Name.Replace("Action", "") == actionName)
-                    && x.IsClass
-                    && x.GetInterface(nameof(INancyAction)) != null).ToList();
+                var matchingActions = ActionTypeProvider.RegisteredActions
+                    .Where(x => x.Name == actionName || x.Name.Replace("Action", "") == actionName)
+                    .ToList();
 
                 if (!matchingActions.Any())
                 {

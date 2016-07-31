@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionTokenMatcher.cs" />
+    <Compile Include="ActionTypeProvider.cs" />
     <Compile Include="INancyAction.cs" />
     <Compile Include="NancyAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

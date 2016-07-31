@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Nancy.SuperSimpleViewEngine.Actions.Ninject</id>
-    <version>1.1</version>
+    <version>1.2.1</version>
     <authors>Michael Shattuck</authors>
     <owners>Michael Shattuck</owners>
     <licenseUrl>https://github.com/michael-shattuck/Nancy.SuperSimpleViewEngine.Actions/blob/master/licence.txt</licenseUrl>
@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-      <file src="bin\Release\Nancy.SuperSimpleViewEngine.Actions.Ninject.dll" />
+      <file src="bin\Release\Nancy.SuperSimpleViewEngine.Actions.Ninject.dll" target="lib\net45\Nancy.SuperSimpleViewEngine.Actions.Ninject.dll" />
   </files>
 </package>
