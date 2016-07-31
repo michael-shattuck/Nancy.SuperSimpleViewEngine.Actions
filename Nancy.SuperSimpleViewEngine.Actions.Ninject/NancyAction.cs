@@ -4,21 +4,21 @@ namespace Nancy.SuperSimpleViewEngine.Actions.Ninject
 {
     public abstract class NancyAction : INancyAction
     {
-        protected NancyContext Context;
-        protected IViewEngineHost Host;
+        protected NancyContext Context { get; private set; }
+        IViewEngineHost host;
 
-        internal void Configure(IViewEngineHost host)
+        internal void Configure(IViewEngineHost viewEngineHost)
         {
-            Context = (NancyContext)host.Context;
-            Host = host;
+            Context = (NancyContext)viewEngineHost.Context;
+            host = viewEngineHost;
         }
 
         public abstract string Invoke();
 
         protected string View(string viewName, dynamic model)
         {
-            var template = Host.GetTemplate(viewName, model);
-            return new ViewEngines.SuperSimpleViewEngine.SuperSimpleViewEngine().Render(template, model, Host);
+            var template = host.GetTemplate(viewName, model);
+            return new ViewEngines.SuperSimpleViewEngine.SuperSimpleViewEngine().Render(template, model, host);
         }
 
         protected string View(string viewName)
