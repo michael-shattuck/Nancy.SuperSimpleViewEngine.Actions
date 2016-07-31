@@ -9,6 +9,7 @@
     <projectUrl>https://github.com/michael-shattuck/Nancy.SuperSimpleViewEngine.Actions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Support for injectable actions in views for SuperSimpleViewEngine using TinyIoC</description>
+    <releaseNotes>Pre-register action types</releaseNotes>
     <tags>nancy,ssve,actions,supersimpleviewengine,tinyioc</tags>
     <dependencies>
       <dependency id="Nancy" version="1.4.3" />
